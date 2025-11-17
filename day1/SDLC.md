@@ -24,12 +24,12 @@ DevOps integrates development and operations to improve software delivery speed,
 
 ### 1. **Flow**
 
-- Enables smooth movement of work from development to production.
+- How fast and smoothly code moves from developers → to production → to users.
 - Focus on automation, reducing bottlenecks, faster delivery.
 
 ### 2. **Feedback**
 
-- Fast, continuous feedback loops.
+- Get information back quickly from production to developers.
 - Helps detect issues early and improve collaboration.
 
 ### 3. **Continuous Learning & Experimentation**
