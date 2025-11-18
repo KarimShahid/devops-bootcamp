@@ -47,9 +47,7 @@ List all currently installed packages and save output to ~/devops-lab/packages.t
 Deployment frequency measures how often a team successfully releases code to production.
 
 $$
-
 Deployment Frequency (per day) = \frac{\text{Total Deployments in a Month}}{\text{Total Number of Working Days}}
-
 $$
 
 Total Deployments in a Month = 40
@@ -58,13 +56,13 @@ Total Number of Working Days = 20
 
 **Deployment Frequency = 40/20 = 2 deployments per day**
 
-1. Lead time for changes
+2. Lead time for changes
 
 How long it takes from code commit to code running in production.
 
 **Average 3 hours**
 
-1. Change failure rate (%)
+3. Change failure rate (%)
 
 Percentage of deployments causing a failure in production.
 
@@ -78,14 +76,12 @@ Total Number of Deployments = 40
 
 **CFR = (6/40) * 100 ⇒ 15%**
 
-1. Mean Time to Recovery
+4. Mean Time to Recovery
 
 Time it takes to recover from a failure.
 
 $$
-
 MTTR = \frac{\text{Total Repair Time}}{\text{Total Number of Repairs}}
-
 $$
 
 Total Repair Time = 90+45+120+240+30+240 = 765 mins
@@ -94,7 +90,7 @@ Total Number of Repairs = 6
 
 **MTTR = 765/6 ⇒ 127.5 mins**
 
-1. Classify the team on DORA metrics
+5. Classify the team on DORA metrics
 
 **DORA (DevOps Research and Assessment) metrics:**
 
