@@ -45,3 +45,29 @@ awk '
 - `header[x] " = " $x` → Combines **header name** with **value**, producing:
 
 ![Screenshot 2025-11-20 at 6.03.09 PM.png](images/Screenshot_2025-11-20_at_6.03.09_PM.png)
+
+# Version 2.0
+
+```bash
+#!/bin/bash
+
+ts=$(date '+%Y-%m-%d %H:%M:%S')
+
+top -b -o +%CPU -n 1 | awk -v ts="$ts" '
+    NR==7 { for (i=1; i<=NF; i++) headers[i]=$i }
+    NR==8 { 
+        printf "%s:%s | %s:%s | %s:%s | date:%s\n", headers[1], $1, \
+        headers[2], $2, headers[9], $9, ts
+    }
+' | tee -a cpu_usage.txt
+```
+
+`| awk -v ts="$ts" '`  
+
+- Pipes the output of top into awk for processing.
+- -v ts="$ts" → passes the bash variable ts (timestamp) into awk as a variable called ts.
+
+`tee -a cpu_usage.txt`
+
+- `a` → append to file (like `>>`).
+- Also prints the same output to the terminal.
