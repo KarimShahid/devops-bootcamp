@@ -103,6 +103,6 @@ print()
 
 Running the script by making it executable
 
-![Screenshot 2025-11-24 at 7.12.15 PM.png](Day%207%2024%20Nov%202025%20-%20Python%20Scripting/Screenshot_2025-11-24_at_7.12.15_PM.png)
+![Screenshot 2025-11-24 at 7.12.15 PM.png](images/Screenshot_2025-11-24_at_7.12.15_PM.png)
 
-![Screenshot 2025-11-24 at 7.12.48 PM.png](Day%207%2024%20Nov%202025%20-%20Python%20Scripting/Screenshot_2025-11-24_at_7.12.48_PM.png)
+![Screenshot 2025-11-24 at 7.12.48 PM.png](images/Screenshot_2025-11-24_at_7.12.48_PM.png)
