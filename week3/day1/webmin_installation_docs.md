@@ -33,12 +33,22 @@ systemctl status webmin.service
 
 ![Screenshot 2025-12-01 at 12.42.31 PM.png](images/Screenshot_2025-12-01_at_12.42.31_PM.png)
 
-Use the ip and port 10000
+Setting port forwarding
 
-192.168.64.3:10000
+![Screenshot 2025-12-02 at 1.06.37 PM.png](images/Screenshot_2025-12-02_at_1.06.37_PM.png)
 
-use the ubuntu username and password with root privs
+Since Host Port for SSH is set at 2222, with [localhost](http://localhost) as host address, we have to do ssh this way
 
-![Screenshot 2025-12-01 at 12.43.35 PM.png](images/Screenshot_2025-12-01_at_12.43.35_PM.png)
+```yaml
+ssh -p 2222 <username>:localhost
+```
 
-![Screenshot 2025-12-01 at 12.44.58 PM.png](images/Screenshot_2025-12-01_at_12.44.58_PM.png)
+![Screenshot 2025-12-02 at 1.09.46 PM.png](images/Screenshot_2025-12-02_at_1.09.46_PM.png)
+
+To connect to the webmin page, use [localhost:10000](http://localhost:10000) (as we have done port mapping)
+
+Use the ubuntu username and password with root privs
+
+![Screenshot 2025-12-02 at 1.13.08 PM.png](images/Screenshot_2025-12-02_at_1.13.08_PM.png)
+
+![Screenshot 2025-12-02 at 1.12.30 PM.png](images/Screenshot_2025-12-02_at_1.12.30_PM.png)
