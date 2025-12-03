@@ -86,7 +86,7 @@ docker start my-nginx
 ![Screenshot 2025-12-03 at 6.56.44 PM.png](images/Screenshot_2025-12-03_at_6.56.44_PM.png)
 ![Screenshot 2025-12-03 at 6.55.10 PM.png](images/Screenshot_2025-12-03_at_6.55.10_PM.png)
 
-Without a volume, changes do not persist.
+
 
 ---
 
@@ -113,8 +113,9 @@ docker ps
 Default content is restored.
 
 ![Screenshot 2025-12-03 at 7.11.50 PM.png](images/Screenshot_2025-12-03_at_7.11.50_PM.png)
-![Screenshot 2025-12-03 at 7.13.06 PM.png](images/Screenshot_2025-12-03_at_7.13.06_PM.png)
 
+
+Without a volume, changes do not persist.
 ---
 
 ## 6. Make Data Persistent Using Docker Volume
@@ -168,12 +169,5 @@ docker run -d -p 80:80 --name my-nginx -v nginx-data:/usr/share/nginx/html nginx
 
 Your changes persist because they are stored in the Docker volume.
 
----
 
-## ✅ Key Takeaways
-
-- Mounting a volume overrides the container's folder.
-- Named volumes copy default container content when first created.
-- Changes inside the mounted volume persist even if the container is removed.
-- The same volume can be reused for new containers to maintain content.
 
