@@ -97,9 +97,9 @@ Remember to use “/” to see the contents of a dir
 
 ![Screenshot 2025-12-09 at 7.40.12 PM.png](images/Screenshot_2025-12-09_at_7.40.12_PM.png)
 
-1. Only your user should be able to read them. (Principle of Least Priviledge)
-2. Rotate your Access Keys every 60–90 days
-3. DO NOT export credentials in shell environment
-4. Use AWS generated short term temporary credentials e.g via STS or Instance Role, instead of creating long term Access Keys for IAM users
-5. Disabled/Delete unused Access Keys
-6. Enable Two-factor authentication on IAM users
+2. Only your user should be able to read them. (Principle of Least Priviledge)
+3. Rotate your Access Keys every 60–90 days
+4. DO NOT export credentials in shell environment
+5. Use AWS generated short term temporary credentials e.g via STS or Instance Role, instead of creating long term Access Keys for IAM users
+6. Disabled/Delete unused Access Keys
+7. Enable Two-factor authentication on IAM users
