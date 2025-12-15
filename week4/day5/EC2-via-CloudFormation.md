@@ -263,7 +263,7 @@ Make sure that aws configure has the proper credentials
 Make sure that template is valid 
 
 ```bash
-aws cloudformation create-stack --stack-name MyStack --template-body file://ec2-cft.yaml
+aws cloudformation validate-template --template-body file://ec2-cft.yaml
 ```
 
 ![Screenshot 2025-12-14 at 6.39.17 PM.png](images/Screenshot_2025-12-14_at_6.39.17_PM.png)
